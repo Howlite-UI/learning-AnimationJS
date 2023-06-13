@@ -1,0 +1,48 @@
+/* animation de fade in fade out  */
+.fade-in {
+    opacity: 0;
+    transition: opacity 5s;
+    -webkit-transition: opacity 5s;
+    -moz-transition: opacity 5s;
+    -ms-transition: opacity 5s;
+    -o-transition: opacity 5s;
+}
+
+.fade-in.active {
+    opacity: 1;
+}
+
+
+/* animation loeading */
+
+.loading {
+    width: 100px;
+    height: 100px;
+    border: lightgray 10px solid;
+    border-top-color: orange;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+    }
+}
